@@ -8,12 +8,12 @@ server:
 spring:
   profiles: dev
   application: 
-    name: microservicecloud-config-dept-client
+    name: microservicecloud-config-providerdept
     
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/cloudDB01              # 数据库名称
+    url: jdbc:mysql://localhost:3306/springclouddb01        # 数据库名称
     username: root
     password: 123456
     dbcp2:
@@ -24,7 +24,7 @@ spring:
       
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+  type-aliases-package: com.atjc.entities    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
   
@@ -37,8 +37,8 @@ eureka:
     prefer-ip-address: true        
  
 info: 
-  app.name: atguigu-microservicecloud-springcloudconfig01
-  company.name: www.atguigu.com
+  app.name: atjc-microservicecloud-springcloudconfig01
+  company.name: www.atjc.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -47,12 +47,12 @@ server:
 spring:
   profiles: test
   application: 
-    name: microservicecloud-config-dept-client
+    name: microservicecloud-config-providerdept
     
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/cloudDB02              # 数据库名称
+    url: jdbc:mysql://localhost:3306/springclouddb02        # 数据库名称
     username: root
     password: 123456
     dbcp2:
@@ -63,7 +63,7 @@ spring:
       
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+  type-aliases-package: com.atjc.entities    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
   
@@ -76,7 +76,7 @@ eureka:
     prefer-ip-address: true        
  
 info: 
-  app.name: atguigu-microservicecloud-springcloudconfig01
-  company.name: www.atguigu.com
+  app.name: atjc-microservicecloud-springcloudconfig01
+  company.name: www.atjc.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
