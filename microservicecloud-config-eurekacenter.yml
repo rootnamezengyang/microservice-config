@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application: 
-    name: microservicecloud-config-eureka-client
+    name: microservicecloud-config-eurekacenter
 eureka:
    instance: 
      hostname: eureka7001.com
