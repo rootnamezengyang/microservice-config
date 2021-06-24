@@ -23,7 +23,7 @@ server:
 spring:
   profiles: test
   application: 
-    name: microservicecloud-config-eureka-client
+    name: microservicecloud-config-eurekacenter
 eureka:
    instance: 
      hostname: eureka7001.com
