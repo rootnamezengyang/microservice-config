@@ -1,14 +1,14 @@
 spring: 
   profiles: 
     active: 
-    - dev 
+    - test 
 ---
 server: 
   port: 8001
 spring:
   profiles: dev
   application: 
-    name: microservicecloud-config-providerdept
+    name: microservicecloud-dept
     
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
@@ -47,7 +47,7 @@ server:
 spring:
   profiles: test
   application: 
-    name: microservicecloud-config-providerdept
+    name: microservicecloud-dept
     
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
